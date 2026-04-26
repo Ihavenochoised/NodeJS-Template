@@ -14,6 +14,9 @@ for (const [routePath, pageFile] of Object.entries(routes)) {
     router.get(routePath, (req, res) => {
         res.sendFile(path.join(root, pageFile));
     });
+    router.all(routePath, (req, res) => {
+        res.status(405).set('Allow', 'GET').send('Method Not Allowed');
+    });
 }
 
 export default router;
