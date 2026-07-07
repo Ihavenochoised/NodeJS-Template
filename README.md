@@ -39,7 +39,7 @@ template/
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/Ihavenochoised/template.git
+git clone https://github.com/Ihavenochoised/NodeJS-Template.git
 ```
 
 2. Install dependencies:
